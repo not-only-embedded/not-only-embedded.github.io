@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+// -------------- THEME SWITCHER -------------- //
+@mixin dark-appearance {
+  filter: invert(1);
+
+  img {
+    filter: invert(1);
+  }
+}
+
+body[a="dark"] {
+  @include dark-appearance;
+}
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] {
+    @include dark-appearance;
+  }
+}
+
+// -------------------------------------------- //
+
+// bg color is also needed in html in order to
+// block body's background propagation
+// see: https://stackoverflow.com/a/61265706
+html,
+body {
+  background: white;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: 'Montserrat', monospace;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+header {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.menu+* {
+  margin-top: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.menu a:hover,
+.menu a.active {
+  font-weight: bold;
+}
+
+.menu a::after {
+  content: attr(data-text);
+  display: block;
+  font-weight: bold;
+  height: 0;
+  visibility: hidden;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  display: flow-root;
+}
+
+.page-content {
+  display: flow-root;
+}
+
+.page-content>*:first-child {
+  margin-top: 0;
+}
+
+.page-content>*:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 1rem 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.1rem 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main.services h3:nth-of-type(even),
+main.services h3:nth-of-type(even) + ul,
+main.services h3:nth-of-type(even) + ul li {
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
