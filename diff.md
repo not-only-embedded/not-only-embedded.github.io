@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Diff
+title: diff
 ---
 
 ### TBD 

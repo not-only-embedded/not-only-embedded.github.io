@@ -1,32 +1,37 @@
 ---
 layout: home
-title: Sagnac Development Kit
+title: sagnac-development-kit
 ---
 
-### TBD
+The **_sagnac-development-kit_ (_sdk_)** is a complete solution for rapid prototyping and evaluation of closed loop fiber optic gyroscope systems.
 
-<!-- Overview
+<a href="/sdk.jpg" target="_blank"><img src="/sdk.jpg" alt="sagnac-development-kit" style="width: 100%; border: 1px solid black;" /></a>
 
-The Sagnac Development Kit (SDK) is a complete platform for rapid prototyping and evaluation of fiber optic gyroscope (FOG) systems based on the Sagnac effect.
+### modulator
+- two **18-bit** channels (single/two channel modulation)
+- single-ended or **differential** operation
+- up to **1MHz** frequency
+- configurable ramp and bias (two/**four step**)
+- output range of **±4.5V or ±9V** (buffered/unbuffered)
 
-## Features
+### detector (demodulator)
+- adjustable detector diode bias up to **+48V**
+- integrated **TIA with virtual ground**
+- ready for user-provided fron-end (**TIA bypass**)
+- feedback measurement with **24-bit ADC**
+- on-the-fly **loop length measurement**
 
-- Plug-and-play interface with standard development boards
-- High-resolution angular rate measurement
-- Configurable bandwidth and noise floor settings
-- Real-time data output over USB and UART
-- Companion Python library for data acquisition and visualization
+### signal processing
+- **FPGA & RISC-V** integrated for command & control 
+- de/modulation synchronized with **10ns** resolution
+- **configurable oversampling**
+- temperature measurement
 
-## Getting Started
+### integration
+- single-supply operation from **+12V**
+- external integration with **SMC or ribbon cables**
+- real-time data output with **RS232 or RS485**
+- control over **USB-C** with PC **GUI application**
 
-1. Connect the kit to your host computer via USB
-2. Install the companion software package
-3. Run the demo script to stream live gyroscope data
-4. Customize parameters via the configuration file
-
-## Applications
-
-- Inertial navigation prototyping
-- Rotation sensing research
-- Academic and lab use
-- Platform stabilization experiments -->
+&nbsp;
+<img src="/sdk_sch.png" alt="sdk schematic"/>
