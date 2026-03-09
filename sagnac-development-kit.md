@@ -5,7 +5,8 @@ title: sagnac-development-kit
 
 The **_sagnac-development-kit_ (_sdk_)** is a complete solution for rapid prototyping and evaluation of closed loop fiber optic gyroscope systems.
 
-<a href="/sdk.jpg" target="_blank"><img src="/sdk.jpg" alt="sagnac-development-kit" style="width: 100%; border: 1px solid black;" /></a>
+&nbsp;
+<img src="/sdk_sch.png" alt="sdk schematic"  style="width: 100%; border: 1px solid black;"/>
 
 ### modulator
 - two **18-bit** channels (single/two channel modulation)
@@ -34,4 +35,4 @@ The **_sagnac-development-kit_ (_sdk_)** is a complete solution for rapid protot
 - control over **USB-C** with PC **GUI application**
 
 &nbsp;
-<img src="/sdk_sch.png" alt="sdk schematic"/>
+<a href="/sdk.jpg" target="_blank"><img src="/sdk.jpg" alt="sagnac-development-kit" style="width: 100%; border: 1px solid black;" /></a>
